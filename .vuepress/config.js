@@ -8,6 +8,18 @@ module.exports = {
   ],
   theme: 'reco',
   themeConfig: {
+	// vssueConfig: {
+    //  platform: 'github',
+    //  owner: 'OWNER_OF_REPO',
+    // repo: 'NAME_OF_REPO',
+     // clientId: 'YOUR_CLIENT_ID',
+     // clientSecret: 'YOUR_CLIENT_SECRET',
+    //},
+	
+    valineConfig: {
+      appId: '4qDIPuf1pxNA5dTGIQrt8Ppi-gzGzoHsz',// your appId
+      appKey: 'r2nQai1wotsPfnAOjnXWro0P', // your appKey
+    },
     nav: [
       { text: 'Home', link: '/', icon: 'reco-home' },
       { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
@@ -88,10 +100,7 @@ module.exports = {
      * valine 设置 (if you need valine comment )
      */
 
-    // valineConfig: {
-    //   appId: '...',// your appId
-    //   appKey: '...', // your appKey
-    // }
+     
   },
   markdown: {
     lineNumbers: true
